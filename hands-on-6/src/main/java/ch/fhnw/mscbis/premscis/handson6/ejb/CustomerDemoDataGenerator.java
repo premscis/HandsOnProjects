@@ -10,6 +10,8 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
+
+import ch.fhnw.mscbis.premscis.handson6.domain.Account;
 import ch.fhnw.mscbis.premscis.handson6.domain.Address;
 import ch.fhnw.mscbis.premscis.handson6.domain.Customer;
 
@@ -39,6 +41,13 @@ public class CustomerDemoDataGenerator {
 			customer.setFirstName("Andreas");
 			customer.setLastName("Martin");
 			customer.setAddress(addresses);
+			
+			Account account = new Account();
+			account.setBalance(200000);
+			account.setName("Deposit account");
+			List<Account> accounts = new ArrayList<Account>();
+			accounts.add(account);
+			customer.setAccount(accounts);
 			
 			customerEJB.createCustomer(customer);
 		}

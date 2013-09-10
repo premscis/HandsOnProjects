@@ -31,9 +31,15 @@ public class Customer implements Serializable {
     @Transient
     private Integer age;
     private String email;
-    @OneToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @OneToMany(cascade = {CascadeType.ALL})
     @JoinColumn(name = "address_fk")
     private List<Address> address;
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "loan_fk")
+    private List<Loan> loan;
+    @OneToMany(cascade = {CascadeType.ALL})
+    @JoinColumn(name = "account_fk")
+    private List<Account> account;
 
     /**
      * @return the id
@@ -136,4 +142,22 @@ public class Customer implements Serializable {
     public void setAddress(List<Address> address) {
         this.address = address;
     }
+
+	public List<Loan> getLoan() {
+		return loan;
+	}
+
+	public void setLoan(List<Loan> loan) {
+		this.loan = loan;
+	}
+
+	public List<Account> getAccount() {
+		return account;
+	}
+
+	public void setAccount(List<Account> account) {
+		this.account = account;
+	}
+    
+    
 }

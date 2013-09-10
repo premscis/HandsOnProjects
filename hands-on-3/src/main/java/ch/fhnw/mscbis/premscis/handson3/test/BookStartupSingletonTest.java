@@ -31,7 +31,7 @@ public class BookStartupSingletonTest {
         try {
             shouldCreateABook();
         } catch (Exception ex) {
-            Logger.getLogger(BookStartupSingletonTest.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
         }
     }
     

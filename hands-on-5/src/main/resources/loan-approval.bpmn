@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd" id="_uki7AAOBEeO9k4QUBktDLw" targetNamespace="http://activiti.org/bpmn">
-  <bpmn2:process id="loan-approval" name="Loan Approval" isExecutable="true">
+  <bpmn2:process id="hands-on-5" name="Hands-on 5" isExecutable="true">
     <bpmn2:userTask id="UserTask_1" activiti:assignee="john" activiti:formKey="embedded:app:forms/approve-loan.html" name="Approve Loan">
       <bpmn2:incoming>SequenceFlow_1</bpmn2:incoming>
       <bpmn2:incoming>SequenceFlow_6</bpmn2:incoming>
@@ -36,8 +36,8 @@
     </bpmn2:startEvent>
     <bpmn2:sequenceFlow id="SequenceFlow_1" sourceRef="StartEvent_1" targetRef="UserTask_1"/>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="Loan Approval">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="loan-approval">
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="Hands-on 5">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="hands-on-5">
       <bpmndi:BPMNShape id="_BPMNShape_StartEvent_3" bpmnElement="StartEvent_1">
         <dc:Bounds height="36.0" width="36.0" x="84.0" y="130.0"/>
         <bpmndi:BPMNLabel>

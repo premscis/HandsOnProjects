@@ -24,7 +24,7 @@ import static org.junit.Assert.assertNotNull;
 public class BookStartupSingletonTest {
     
     @EJB
-    private BookEJB bookEJBLocal;
+    private BookEJB bookEJB;
 
     @PostConstruct
     void init() {
@@ -43,9 +43,9 @@ public class BookStartupSingletonTest {
         book.setIsbn("1-84023-742-2");
         book.setNbOfPage(354);
         book.setIllustrations(false);
-        book = bookEJBLocal.createBook(book);
+        book = bookEJB.createBook(book);
         assertNotNull("ID should not be null", book.getId());
-        List<Book> books = bookEJBLocal.findBooks();
+        List<Book> books = bookEJB.findBooks();
         assertNotNull(books);
     }
 }

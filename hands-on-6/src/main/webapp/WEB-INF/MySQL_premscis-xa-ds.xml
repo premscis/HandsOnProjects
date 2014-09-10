@@ -5,14 +5,14 @@
 
 		<xa-datasource-class>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</xa-datasource-class>
 
-		<xa-datasource-property name="PortNumber">3306
+		<xa-datasource-property name="PortNumber">80
 		</xa-datasource-property>
-		<xa-datasource-property name="ServerName">localhost
+		<xa-datasource-property name="ServerName">mature.iwi.wirtschaft.fhnw.ch
 		</xa-datasource-property>
 		<xa-datasource-property name="DatabaseName">premscis
 		</xa-datasource-property>
 
-		<driver>mysql-connector-java-5.1.26-bin.jar</driver>
+		<driver>mysql-connector-java-5.1.32-bin.jarcom.mysql.jdbc.Driver_5_1</driver>
 
 		<security>
 			<user-name>premscis</user-name>

@@ -2,7 +2,7 @@
 <datasources xmlns="http://www.jboss.org/ironjacamar/schema">
  <datasource jta="true" jndi-name="java:jboss/datasources/MySQL_premscis" enabled="true" 
      use-java-context="true" pool-name="MySQL_premscis">
-  <connection-url>jdbc:mysql://mature.iwi.wirtschaft.fhnw.ch:80/premscis</connection-url>
+  <connection-url>jdbc:mysql://147.86.7.48:3306/student0</connection-url>
   <driver>mysql-connector-java-5.1.32-bin.jarcom.mysql.jdbc.Driver_5_1</driver>
   <pool></pool>
   <security>

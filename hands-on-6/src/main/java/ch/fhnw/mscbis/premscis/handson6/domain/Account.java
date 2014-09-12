@@ -16,7 +16,7 @@ public class Account {
 	private String name;
 	private long balance;
 	@ManyToOne
-	public Customer customer;
+	private Customer customer;
 	
 	public int getID() {
 		return ID;

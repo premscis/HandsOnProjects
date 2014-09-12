@@ -17,7 +17,7 @@ public class Loan {
 	private String term;
 	private long amount;
 	@ManyToOne
-	public Customer customer;
+	private Customer customer;
 	
 	public int getID() {
 		return ID;
